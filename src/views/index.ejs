@@ -8,10 +8,11 @@
   <body>
     <h1>Mini Message Board</h1>
     <div>
-      <% messages.forEach(message => { %>
+      <% messages.forEach((message, index) => { %>
         <div><%= message.user %></div>
         <div><%= message.text %></div>
         <div><%= message.added %></div>
+        <div><a href="/<%= message.id %>">Open</a></div>
       <% }); %>
     </div>
   </body>
