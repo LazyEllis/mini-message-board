@@ -19,4 +19,8 @@ indexRouter.get("/", (req, res) => {
   res.render("index", { messages });
 });
 
+indexRouter.get("/new", (req, res) => {
+  res.render("form");
+});
+
 export default indexRouter;
