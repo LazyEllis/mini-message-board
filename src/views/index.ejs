@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Mini Message Board</title>
+  </head>
+  <body>
+    <h1>Mini Message Board</h1>
+    <div>
+      <% messages.forEach(message => { %>
+        <div><%= message.user %></div>
+        <div><%= message.text %></div>
+        <div><%= message.added %></div>
+      <% }); %>
+    </div>
+  </body>
+</html>
