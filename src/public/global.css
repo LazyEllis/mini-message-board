@@ -1,0 +1,28 @@
+:root {
+  --bg-primary: #1b1b1b;
+  --bg-secondary: #242424;
+  --bg-tertiary: #35373b;
+  --bg-green: #258c60;
+  --bg-green-hover: #2b6b50;
+  --text-primary: #ffffff;
+  --text-secondary: #8c8c8c;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  background-color: var(--bg-secondary);
+  padding: 10px 20px;
+}
+
+main {
+  padding: 20px;
+}

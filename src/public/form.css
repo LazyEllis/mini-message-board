@@ -1,0 +1,29 @@
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+label,
+button {
+  display: block;
+}
+
+input,
+button {
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input {
+  background-color: var(--bg-tertiary);
+  margin-top: 10px;
+}
+
+button {
+  background-color: var(--bg-green);
+}
+
+button:hover {
+  background-color: var(--bg-green-hover);
+}

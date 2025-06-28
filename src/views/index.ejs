@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Mini Message Board</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/message.css">
   </head>
   <body>
     <h1>Mini Message Board</h1>
-    <div>
-      <% messages.forEach((message, index) => { %>
-        <div><%= message.user %></div>
-        <div><%= message.text %></div>
-        <div><%= message.added %></div>
-        <div><a href="/<%= message.id %>">Open</a></div>
-      <% }); %>
-    </div>
+    <main>
+      <div class="message-list">
+        <% messages.forEach(message => { %>
+          <div class="message-card">
+            <div class="message-header">
+              <div class="message-author"><%= message.user %></div>
+              <div class="message-timestamp"><%= message.added %></div>
+            </div>
+            <div class="message-body">
+              <div class="message-text"><%= message.text %></div>
+              <a href="/<%= message.id %>" class="link">Open</a>
+            </div>
+          </div>
+        <% }); %>
+        <a href="/new" class="link text-center">Send a message</a>
+      </div>
+    </main>
   </body>
 </html>

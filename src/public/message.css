@@ -1,0 +1,55 @@
+.message-list,
+.message-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-list {
+  gap: 20px;
+}
+
+.message-card {
+  gap: 10px;
+}
+
+.message-header {
+  display: flex;
+  gap: 10px;
+}
+
+.message-author {
+  font-weight: 700;
+}
+
+.message-timestamp {
+  color: var(--text-secondary);
+}
+
+.message-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message-text,
+.link {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message-text {
+  background-color: var(--bg-tertiary);
+  flex-grow: 1;
+}
+
+.link {
+  background-color: var(--bg-green);
+}
+
+.link:hover {
+  background-color: var(--bg-green-hover);
+}
+
+.text-center {
+  text-align: center;
+}

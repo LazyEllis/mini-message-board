@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Message | Mini Message Board</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/message.css">
   </head>
   <body>
     <h1>Message</h1>
-    <div>
-      <div><%= message.user %></div>
-      <div><%= message.text %></div>
-      <div><%= message.added %></div>
-    </div>
+    <main>
+      <div class="message-list">
+        <div class="message-card">
+          <div class="message-header">
+            <div class="message-author"><%= message.user %></div>
+            <div class="message-timestamp"><%= message.added %></div>
+          </div>
+          <div class="message-body">
+            <div class="message-text"><%= message.text %></div>
+          </div>
+        </div>
+        <a href="/" class="link text-center">Go back</a>
+      </div>
+    </main>
   </body>
 </html>

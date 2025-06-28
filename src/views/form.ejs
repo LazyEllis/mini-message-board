@@ -4,26 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Message | Mini Message Board</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/form.css">
   </head>
   <body>
-    <h1>Add a New Message</h1>
-    <div>
+    <h1>Send a Message</h1>
+    <main>
       <form action="/new" method="POST">
-        <div>
+        <div class="form-group">
           <label for="user">Name</label>
           <input type="text" name="user" id="user" required>
         </div>
         
-        <div>
+        <div class="form-group">
           <label for="text">Message</label>
           <input type="text" name="text" id="text" required>
         </div>
 
-        <div>
-          <button type="submit">Submit</button>
-        </div>
+        <button type="submit">Send</button>
       </form>
-    </div>
+    </main>
   </body>
 </html>
 
