@@ -16,6 +16,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/new", newMessageRouter);
 app.use("/", indexRouter);
 
+// eslint-disable-next-line no-unused-vars
+app.use((err, req, res, next) => {
+  console.error(err);
+  res
+    .status(err.statusCode || 500)
+    .render("error", { message: err.statusCode && err.message });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
