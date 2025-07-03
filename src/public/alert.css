@@ -1,0 +1,15 @@
+.alert {
+  background-color: #493940;
+  border: 1px solid #ed4245;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.alert-title {
+  font-weight: 700;
+}
+
+.alert-list {
+  list-style: disc;
+  margin-left: 20px;
+}

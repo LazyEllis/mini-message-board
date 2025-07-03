@@ -7,19 +7,30 @@
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/global.css">
     <link rel="stylesheet" href="/form.css">
+    <link rel="stylesheet" href="/alert.css">
   </head>
   <body>
     <h1>Send a Message</h1>
     <main>
+      <% if (locals.errors) {%>
+        <div class="alert">
+          <div class="alert-title">There was a problem submitting your form:</div>
+          <ul class="alert-list">
+            <% errors.forEach((error) => { %>
+              <li><%= error.msg %></li>
+            <% }); %>
+          </ul>
+        </div>
+      <% } %>
       <form action="/new" method="POST">
         <div class="form-group">
           <label for="author">Name</label>
-          <input type="text" name="author" id="author" required>
+          <input type="text" name="author" id="author" value="<%= locals.data?.author || ''%>" required>
         </div>
         
         <div class="form-group">
           <label for="content">Message</label>
-          <input type="text" name="content" id="content" required>
+          <input type="text" name="content" id="content" value="<%= locals.data?.content || ''%>" required>
         </div>
 
         <button type="submit">Send</button>
@@ -27,4 +38,3 @@
     </main>
   </body>
 </html>
-
