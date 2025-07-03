@@ -9,7 +9,7 @@ const indexRouter = Router();
 
 indexRouter.get("/", getMessages);
 
-indexRouter.get("/:id", getMessage);
+indexRouter.get("/messages/:id", getMessage);
 
 indexRouter.get("/*splat", render404Page);
 
