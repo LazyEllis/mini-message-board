@@ -15,7 +15,7 @@
         <div class="message-card">
           <div class="message-header">
             <div class="message-author"><%= message.author %></div>
-            <div class="message-timestamp"><%= message.created_at %></div>
+            <div class="message-timestamp"><%= formatTimestamp(message.created_at) %></div>
           </div>
           <div class="message-body">
             <div class="message-text"><%= message.content %></div>
