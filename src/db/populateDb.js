@@ -29,7 +29,9 @@ VALUES
   ('This is cool dawg 😁 well done!!v', 'Chloe', '2025-07-01T03:30:28.000Z'),
   ('Honestly, interesting.', 'Ramon.cvc on INSTAGRAM', '2025-07-01T18:22:23.000Z'),
   ('very peak, anyway IT''S NOT GOJOVER!!! HE WILL COME BACK IM SURE 😭😭😭😭', 'exprenza', '2025-07-01T23:57:40.000Z'),
-  ('What up GXNG', 'LazyTurtle', '2025-07-02T21:08:27.000Z');
+  ('What up GXNG', 'LazyTurtle', '2025-07-02T21:08:27.000Z'),
+  ('I was here', 'GhidWard', '2025-07-03T04:28:57.000Z'),
+  ('HI this is nice', 'COOOL', '2025-07-03T23:26:53.000Z');
 `;
 
 const main = async () => {
